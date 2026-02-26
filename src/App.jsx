@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import Navbar from "./components/Navbar";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -7,9 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
 
   return (
-    <>
-      <h1 className="">Grace Fashion</h1>
-    </>
+    <div>
+      <Navbar />
+      <main>
+<h1 className="text-3xl">Hello</h1>
+      </main>
+    </div>
+
   )
 }
 
