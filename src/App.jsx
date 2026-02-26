@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <main>
         <HeroSection />
+        <AboutSection />
       </main>
     </div>
 
