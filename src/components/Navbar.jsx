@@ -2,7 +2,7 @@ import NavLink from "./NavLink";
 
 function Navbar() {
     return (
-        <nav className="flex justify-between place-items-center p-4">
+        <nav className="flex justify-between place-items-center p-4 absolute w-full">
             <h1 className="font-bold text-3xl">Serenite</h1>
             <NavLink />
         </nav>

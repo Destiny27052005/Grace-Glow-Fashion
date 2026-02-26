@@ -17,3 +17,10 @@ h5,
 h6 {
     font-family: 'Cormorant Garamond', serif;
 }
+
+.heroSection {
+    background: url('/src/assets/images/hero-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -8,10 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
 
   return (
-    <div>
+    <div className="relative">
       <Navbar />
       <main>
-<h1 className="text-3xl">Hello</h1>
+        <HeroSection />
       </main>
     </div>
 
