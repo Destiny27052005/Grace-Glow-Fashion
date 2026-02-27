@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function NavLink() {
     return (
         <ul className="flex space-x-4">
