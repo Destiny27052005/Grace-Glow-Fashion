@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ServiceSection from "./components/ServicesSection";
 import GallerySection from "./components/GallerySection";
+import ContactSection from "./components/ContactSection";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -19,6 +20,7 @@ function App() {
         <AboutSection />
         <ServiceSection />
         <GallerySection />
+        <ContactSection />
       </main>
     </div>
 
