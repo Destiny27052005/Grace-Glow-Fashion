@@ -33,7 +33,7 @@ function ContactSection() {
                         </div>
                     </div>
                 </div>
-                <form action="">
+                <form action="" className="flex flex-col md:w-150">
                     <input type="text" name="name" placeholder="Your Name" className="pb-3 text-gray-500 border-b-2 border-gray-400" />
                     <input type="email" name="email" placeholder="Email Address" className="pb-3 text-gray-500 border-b-2 border-gray-400" />
                     <input type="tel" name="tel" placeholder="Phone Number" className="pb-3 text-gray-500 border-b-2 border-gray-400" />
