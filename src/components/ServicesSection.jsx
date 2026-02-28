@@ -13,7 +13,6 @@ function ServiceSection() {
                 end: 'top 20%',
                 scrub: true,
                 toggleActions: "play none none reverse",
-                markers: true,
             },
             y: 0,
             opacity: 1,
@@ -34,8 +33,9 @@ function ServiceSection() {
             y: 0,
             opacity: 1,
             duration: 2.5,
-            delay:1.7,
+            delay: 1.7,
             stagger: 2.5,
+            ease: "power2.out"
         })
 
     })
