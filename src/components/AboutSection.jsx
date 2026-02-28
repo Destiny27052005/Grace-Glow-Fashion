@@ -7,7 +7,7 @@ function AboutSection() {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".about",
-                start: 'top 70%',
+                start: 'top 75%',
                 end: "top bottom",
                 toggleActions: "play none none reverse",
             }
