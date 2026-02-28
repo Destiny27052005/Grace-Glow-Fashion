@@ -37,7 +37,8 @@ function ContactSection() {
                     <input type="text" name="name" placeholder="Your Name" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required/>
                     <input type="email" name="email" placeholder="Email Address" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required/>
                     <input type="tel" name="tel" placeholder="Phone Number" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required/>
-                    <select name="service" id="service" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required>Select a service
+                    <select name="service" id="service" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required>
+                        <option value="" disabled selected hidden>Select a service</option>
                         <option value="Signature Facial">Signature Facial</option>
                         <option value="Hot Stone Massage">Hot Stone Massage</option>
                         <option value="Aromatherapy">Aromatherapy</option>
