@@ -67,7 +67,7 @@ function ContactSection() {
                         </div>
                     </div>
 
-                    <div className="flex gap-3 mb-2 place-items-baseline">
+                    <div className="flex gap-3 mb-5 place-items-baseline">
                         <span><FaClock className="text-green-400" /></span>
                         <div>
                             <h3 className="text-xl font-medium">Hours</h3>
@@ -76,7 +76,7 @@ function ContactSection() {
                         </div>
                     </div>
                 </div>
-                <form action="https://formspree.io/f/mdaljdqa" className="sm:mt-8 flex flex-col md:w-[50%]">
+                <form action="https://formspree.io/f/mdaljdqa" className="flex flex-col md:w-[50%]">
                     <input type="text" name="name" placeholder="Your Name" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required />
                     <input type="email" name="email" placeholder="Email Address" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required />
                     <input type="tel" name="tel" placeholder="Phone Number" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required />
