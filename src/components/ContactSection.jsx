@@ -5,50 +5,37 @@ import { FaPhone } from "react-icons/fa6";
 
 function ContactSection() {
     useGSAP(() => {
-        gsap.fromTo('.contact .heading', {
-            y: 80,
-            opacity: 0
-        }, {
+        const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.contact',
                 start: 'top 80%',
                 end: 'top 20%',
                 scrub: true,
                 toggleActions: "play none none reverse",
-            },
+            }
+        });
+        tl.fromTo('.contact .heading', {
+            y: 50,
+            opacity: 0
+        }, {
             y: 0,
             opacity: 1,
             duration: 1.5,
             ease: "power2.out"
         });
-        gsap.fromTo('.details', {
+        tl.fromTo('.details', {
             x: -100,
             opacity: 0
         }, {
-            scrollTrigger: {
-                trigger: '.contact',
-                start: 'top 80%',
-                end: 'top 20%',
-                scrub: true,
-                toggleActions: "play none none reverse"
-            },
             x: 0,
             opacity: 1,
             duration: 1,
             ease: "power2.out",
-            delay: 1.5,
-        });
-        gsap.fromTo(".contact form", {
+        }, "+=0.2");
+        tl.fromTo(".contact form", {
             x: 500,
             opacity: 0
         }, {
-            scrollTrigger: {
-                trigger: '.contact',
-                start: 'top 80%',
-                end: 'top 20%',
-                scrub: true,
-                toggleActions: "play none none reverse"
-            },
             x: 0,
             opacity: 1,
             duration: 1,
