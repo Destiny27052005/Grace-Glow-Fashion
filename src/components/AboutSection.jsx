@@ -7,19 +7,19 @@ function AboutSection() {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".about",
-                start: 'top 80%',
+                start: 'top 70%',
                 end: "top bottom",
-                toggleActions: "play none none reverse"
+                toggleActions: "play none none reverse",
             }
         })
         tl.fromTo('.about img',
             {
-                 x: -100, opacity: 0 
+                x: -100, opacity: 0
             }, {
             x: 0,
             opacity: 1,
             duration: 1.2,
-ease: "power2.out"
+            ease: "power2.out"
         })
         tl.fromTo(".about div", {
             x: 500,
@@ -27,8 +27,8 @@ ease: "power2.out"
         }, {
             x: 0,
             opacity: 1,
-              duration: 1,
-ease: "power2.out"
+            duration: 1,
+            ease: "power2.out"
         }, "-=0.5")
     })
     return (
