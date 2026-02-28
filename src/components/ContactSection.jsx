@@ -1,15 +1,71 @@
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import { FaClock, FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 
 function ContactSection() {
+    useGSAP(() => {
+        gsap.fromTo('.contact .heading', {
+            y: 80,
+            opacity: 0
+        }, {
+            scrollTrigger: {
+                trigger: '.contact',
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true,
+                toggleActions: "play none none reverse",
+            },
+            y: 0,
+            opacity: 1,
+            duration: 1.5,
+            ease: "power2.out"
+        });
+        gsap.fromTo('.details', {
+            x: -100,
+            opacity: 0
+        }, {
+            scrollTrigger: {
+                trigger: '.contact',
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true,
+                toggleActions: "play none none reverse"
+            },
+            x: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power2.out",
+            delay: 1.5,
+        });
+        gsap.fromTo(".contact form", {
+            x: 500,
+            opacity: 0
+        }, {
+            scrollTrigger: {
+                trigger: '.contact',
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true,
+                toggleActions: "play none none reverse"
+            },
+            x: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power2.out"
+        }, "-=0.5")
+    })
+
     return (
-        <section id="contact" className="p-12 bg-[#f2f0ed]">
-            <h1 className="text-gray-500 text-center mb-3">GET IN TOUCH</h1>
-            <h2 className="text-center font-bold text-3xl mb-5">Book Your Visit</h2>
+        <section id="contact" className="contact p-12 bg-[#f2f0ed] overflow-hidden">
+            <div className="heading">
+                <h1 className="text-gray-500 text-center mb-3">GET IN TOUCH</h1>
+                <h2 className="text-center font-bold text-3xl mb-5">Book Your Visit</h2>
+            </div>
             <div className="md:flex justify-between">
-                <div>
+                <div className="details">
                     <div className="flex gap-3 mb-2 place-items-baseline">
-                        <span><FaLocationDot className="text-green-400"/></span>
+                        <span><FaLocationDot className="text-green-400" /></span>
                         <div>
                             <h3 className="text-xl font-medium">Location</h3>
                             <p className="text-gray-500">123 Bloom Avenue, Suite 200</p>
@@ -17,7 +73,7 @@ function ContactSection() {
                         </div>
                     </div>
                     <div className="flex gap-3 mb-2 place-items-baseline">
-                        <span><FaPhone className="text-green-400"/></span>
+                        <span><FaPhone className="text-green-400" /></span>
                         <div>
                             <h3 className="text-xl font-medium">Phone</h3>
                             <p className="text-gray-500"><a href="tel:+2348153603155">0815-360-3155</a></p>
@@ -25,7 +81,7 @@ function ContactSection() {
                     </div>
 
                     <div className="flex gap-3 mb-2 place-items-baseline">
-                        <span><FaClock className="text-green-400"/></span>
+                        <span><FaClock className="text-green-400" /></span>
                         <div>
                             <h3 className="text-xl font-medium">Hours</h3>
                             <p className="text-gray-500">Mon - Fri: 9:00 AM - 8:00 PM</p>
@@ -34,9 +90,9 @@ function ContactSection() {
                     </div>
                 </div>
                 <form action="https://formspree.io/f/mdaljdqa" className="sm:mt-8 flex flex-col md:w-[50%]">
-                    <input type="text" name="name" placeholder="Your Name" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required/>
-                    <input type="email" name="email" placeholder="Email Address" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required/>
-                    <input type="tel" name="tel" placeholder="Phone Number" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required/>
+                    <input type="text" name="name" placeholder="Your Name" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required />
+                    <input type="email" name="email" placeholder="Email Address" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required />
+                    <input type="tel" name="tel" placeholder="Phone Number" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required />
                     <select name="service" id="service" className="pb-3 text-gray-500 border-b-2 border-gray-400 mb-3 outline-none" required>
                         <option value="" disabled selected hidden>Select a service</option>
                         <option value="Signature Facial">Signature Facial</option>
