@@ -15,14 +15,14 @@ function App() {
 
   return (
     <div className="relative">
-      <Navbar />
+      <Navbar/>
       <main>
         <HeroSection />
         <AboutSection />
-        <ServiceSection />
+        <ServiceSection/>
         <GallerySection />
         <ContactSection />
-        <Footer />
+        <Footer/>
       </main>
     </div>
 

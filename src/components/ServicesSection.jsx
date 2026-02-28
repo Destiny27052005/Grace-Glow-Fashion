@@ -2,7 +2,7 @@
 
 function ServiceSection() {
     return (
-        <section className="p-12 bg-[#f2f0ed]">
+        <section className="p-12 bg-[#f2f0ed]" id="services">
             <h1 className="text-center">TREATMENTS</h1>
             <h2 className="text-4xl font-bold text-center">Our Services</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 my-6" >

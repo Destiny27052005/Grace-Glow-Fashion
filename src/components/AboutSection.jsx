@@ -2,7 +2,7 @@ import AboutSpa from "../assets/images/about-spa.jpg"
 
 function AboutSection() {
     return (
-        <section className="md:flex place-items-center gap-20 p-12">
+        <section id="about" className="md:flex place-items-center gap-20 p-12">
             <img src={AboutSpa} alt="About Spa" className="md:h-150" />
             <div>
                 <h1 className="font-medium text-xl">OUR STORY</h1>
