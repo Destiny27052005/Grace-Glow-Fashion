@@ -5,8 +5,8 @@ function Footer() {
         <section className="px-12 py-16 md:flex justify-between place-items-center">
             <h1 className="sm:text-center text-3xl font-bold sm:mb-4">Serenite</h1>
             <div className="flex gap-3 sm:mb-4 sm:place-self-center">
-                <a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-2xl" /></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebook className="text-2xl" /></a>
+                <a href="https://www.facebook.com/tobi.adekunle.969" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-2xl" /></a>
+                <a href="https://www.instagram.com/destinyadekunle7?igsh=dmx0Y3R4MmdtZTR2" target="_blank" rel="noopener noreferrer"><FaFacebook className="text-2xl" /></a>
             </div>
             <p className="text-gray-500 flex gap-2 place-items-center place-self-center"><FaCopyright /> 2026 Serenite. All rights reserved.</p>
         </section>
