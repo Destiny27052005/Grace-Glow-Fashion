@@ -18,7 +18,7 @@ function Navbar() {
     });
 
     return (
-        <nav id="nav" className="nav flex justify-between place-items-center p-4 fixed w-full z-10 ">
+        <nav id="nav" className="nav flex justify-between place-items-center py-4 px-12 fixed w-full z-10 ">
             <h1 className="font-bold text-3xl">Serenite</h1>
             <NavLink />
         </nav>
