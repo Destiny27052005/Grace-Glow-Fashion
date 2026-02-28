@@ -32,7 +32,7 @@ function AboutSection() {
         }, "-=0.5")
     })
     return (
-        <section id="about" className="about md:flex place-items-center gap-20 p-12 overflow-hidden">
+        <section id="about" className="about md:flex place-items-center gap-20 px-12 py-18 overflow-hidden">
             <img src={AboutSpa} alt="About Spa" className="md:h-150" />
             <div>
                 <h1 className="font-medium text-xl">OUR STORY</h1>
