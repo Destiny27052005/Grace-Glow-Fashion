@@ -44,7 +44,7 @@ function GallerySection() {
         })
     })
     return (
-        <section id="gallery" className="gallery p-12">
+        <section id="gallery" className="gallery px-12 py-18">
             <div className="heading">
                 <h1 className="text-gray-400 mb-4 text-center">PORTFOLIO</h1>
                 <h2 className="text-4xl font-bold mb-8 text-center">Our Gallery</h2>
