@@ -5,6 +5,7 @@ import AboutSection from "./components/AboutSection";
 import ServiceSection from "./components/ServicesSection";
 import GallerySection from "./components/GallerySection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -21,6 +22,7 @@ function App() {
         <ServiceSection />
         <GallerySection />
         <ContactSection />
+        <Footer />
       </main>
     </div>
 
