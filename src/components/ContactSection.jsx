@@ -57,7 +57,7 @@ function ContactSection() {
     })
 
     return (
-        <section id="contact" className="contact p-12 bg-[#f2f0ed] overflow-hidden">
+        <section id="contact" className="contact px-12 py-18 bg-[#f2f0ed] overflow-hidden">
             <div className="heading">
                 <h1 className="text-gray-500 text-center mb-3">GET IN TOUCH</h1>
                 <h2 className="text-center font-bold text-3xl mb-5">Book Your Visit</h2>
