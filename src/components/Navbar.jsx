@@ -7,6 +7,7 @@ function Navbar() {
     useGSAP(() => {
         gsap.to('#nav', {
             backgroundColor: 'white',
+            borderBottom: "1px solid #d1d5dc ",
             scrollTrigger: {
                 trigger: 'body',
                 start: 'top -10%',
@@ -17,7 +18,7 @@ function Navbar() {
     });
 
     return (
-        <nav id="nav" className="nav flex justify-between place-items-center p-4 fixed w-full">
+        <nav id="nav" className="nav flex justify-between place-items-center p-4 fixed w-full z-10 ">
             <h1 className="font-bold text-3xl">Serenite</h1>
             <NavLink />
         </nav>
