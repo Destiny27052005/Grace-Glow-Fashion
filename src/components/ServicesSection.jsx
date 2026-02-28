@@ -41,7 +41,7 @@ function ServiceSection() {
     })
 
     return (
-        <section className="services px-12 py-15 bg-[#f2f0ed]" id="services">
+        <section className="services px-12 py-18 bg-[#f2f0ed]" id="services">
             <div className="heading">
                 <h1 className="text-center text-green-500">TREATMENTS</h1>
                 <h2 className="text-4xl font-bold text-center">Our Services</h2>
